@@ -28,10 +28,7 @@ def main():
         title = soup.find("title").contents[0].strip() 
         #4) Text of the article, currently has a bug where it doesn't pull the first paragraph
         paragraphs = ""
-        VALID_TAGS = ['p']
         for s in soup.find_all('p'): #Works but with same error as nzherald
-            if s.name not in VALID_TAGS:
-                s.replaceWith(s.renderContents())
             try:
                 paragraphs += s.contents[0].strip()
             except:

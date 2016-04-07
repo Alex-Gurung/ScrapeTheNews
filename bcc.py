@@ -4,7 +4,7 @@ import re
 
 def main():
     out = open('output.txt', 'w')
-    inp = open('bccurllist.txt', 'r')
+    inp = open('bbcurllist.txt', 'r')
     for u in inp:
         opener = urllib.request.build_opener()
         opener.addheaders = [('User-agent', 'Mozilla/5.0')]

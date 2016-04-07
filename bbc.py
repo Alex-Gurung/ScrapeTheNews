@@ -29,11 +29,10 @@ def main():
         #4) Text of the article, currently has a bug where it doesn't pull the first paragraph
         paragraphs = ""
         for s in soup.find_all('p'):
-            if not s.has_attr('class'):
-                try:
-                    paragraphs += s.contents[0].strip()
-                except:
-                    print("error")
+            try:
+                paragraphs += s.contents[0].strip()
+            except:
+                print("error")
         #Printing
         #print(date)
         print("Title: %s\n" % title) #prints it, comment out if don't want to see it in terminal/cmd

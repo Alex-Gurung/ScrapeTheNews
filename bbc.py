@@ -15,7 +15,6 @@ def main():
         #1) Link to the website 
         #This is already defined as url
         #2) Date article published 
-        #date = soup.find("title") #This variable should be overwritten in the following loop
         date = ""
         for i in soup.find_all('div'): #For every span element in source code
             if i.has_attr('class'): #if it has the class element

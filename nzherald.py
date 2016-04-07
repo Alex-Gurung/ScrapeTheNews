@@ -27,7 +27,7 @@ def main():
 
         #3) title of article 
         title = soup.find("title").contents[0].strip() 
-        #4) Text of the article
+        #4) Text of the article, currently has a bug where it doesn't pull the first paragraph
         paragraphs = ""
         for s in soup.find_all('p'):
             if not s.has_attr('class'):

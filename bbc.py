@@ -17,9 +17,9 @@ def main():
         #2) Date article published 
         #date = soup.find("title") #This variable should be overwritten in the following loop
         date = ""
-        for i in soup.find_all('span'): #For every span element in source code
+        for i in soup.find_all('div'): #For every span element in source code
             if i.has_attr('class'): #if it has the class element
-                if i['class'] == "floatLeft storyDate": #And if that element is called "floatLeft storyDate"
+                if i['class'] == "date date--v2": #And if that element is called "floatLeft storyDate"
                     try:
                         date = s.contents[0].strip()
                     except:

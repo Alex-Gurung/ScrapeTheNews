@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup, SoupStrainer
 import urllib.request
-import re
 
 def main():
     out = open('output.txt', 'w')

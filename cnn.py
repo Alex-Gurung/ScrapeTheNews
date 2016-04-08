@@ -35,7 +35,7 @@ def main():
             try:
                 paragraphs += s.contents[0].strip()
             except:
-                print("error")
+                print("error") #If can't strip
         #Printing
         #print(date)
         print("Title: %s\n" % title) #prints it, comment out if don't want to see it in terminal/cmd

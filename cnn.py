@@ -6,8 +6,8 @@ def main():
     inp = open('urllist.txt', 'r')
     for u in inp:
         opener = urllib.request.build_opener()
-        opener.addheaders = [('User-agent', 'Mozilla/5.0')]
-        url = u
+        opener.addheaders = [('User-agent', 'Mozilla/5.0')] #Mozilla thing may not be nessecary
+        url = u #Not necessary but makes it easier to hard code a url
         soup = BeautifulSoup(opener.open(url), "html.parser")
 
 

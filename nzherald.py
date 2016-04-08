@@ -21,7 +21,7 @@ def main():
                     try:
                         date = s.contents[0].strip()
                     except:
-                        print("error")
+                        print("error") #If something goes wrong
 
         #3) title of article 
         title = soup.find("title").contents[0].strip() 

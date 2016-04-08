@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup, SoupStrainer
 import urllib.request
-#import re #-----Probably unnessecary, check later
 
 def main():
     out = open('output.txt', 'w') #Opens two files, one for reading in urls, and one for printing output data

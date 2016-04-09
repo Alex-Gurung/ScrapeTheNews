@@ -15,11 +15,12 @@ def main():
         #This is already defined as url
         #2) Date article published 
         date = "" #Creating a empty string
-        for i in soup.find_all('p'): #For every span element in source code
+        for i in soup.find_all('time'): #For every span element in source code
             if i.has_attr('class'): #if it has the class element
-                if i['class'] == "story-body-text story-content": #And if that element is called "floatLeft storyDate"
+                if i['class'] == "dateline": #And if that element is called "floatLeft storyDate"
                     try:
                         date = s.contents[0].strip()
+                        break
                     except:
                         print("error") #If something goes wrong
 

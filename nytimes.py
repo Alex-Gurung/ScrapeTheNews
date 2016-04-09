@@ -3,7 +3,7 @@ import urllib.request #PYTHON CHECK: if using python 2, import urllib2
 
 def main():
     out = open('output.txt', 'w') #Opens two files, one for reading in urls, and one for printing output data
-    inp = open('nzurllist.txt', 'r')
+    inp = open('nyurllist.txt', 'r')
     for u in inp:
         opener = urllib.request.build_opener() #PYTHON CHECK: if using python 2, say urllib2 instead of urllib.request
         opener.addheaders = [('User-agent', 'Mozilla/5.0')] #Mozilla thing may not be nessecary
@@ -15,9 +15,9 @@ def main():
         #This is already defined as url
         #2) Date article published 
         date = "" #Creating a empty string
-        for i in soup.find_all('span'): #For every span element in source code
+        for i in soup.find_all('p'): #For every span element in source code
             if i.has_attr('class'): #if it has the class element
-                if i['class'] == "floatLeft storyDate": #And if that element is called "floatLeft storyDate"
+                if i['class'] == "story-body-text story-content": #And if that element is called "floatLeft storyDate"
                     try:
                         date = s.contents[0].strip()
                     except:

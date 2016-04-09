@@ -27,12 +27,13 @@ def main():
         title = soup.find("title").contents[0].strip() 
         #4) Text of the article, currently has a bug where it doesn't pull the first paragraph
         paragraphs = ""
-        for s in soup.find_all('p'):
-            if not s.has_attr('class'):
-                try:
-                    paragraphs += s.contents[0].strip()
-                except:
-                    print("error")
+        for i in soup.find_all('p'): #For every span element in source code
+            if i.has_attr('class'): #if it has the class element
+                if i['class'] == "story-body-text story-content": #And if that element is called "floatLeft storyDate"
+                    try:
+                        date = s.contents[0].strip()
+                    except:
+                        print("error") #If something goes wrong
         #Printing
         #print(date)
         print("Title: %s\n" % title) #prints it, comment out if don't want to see it in terminal/cmd

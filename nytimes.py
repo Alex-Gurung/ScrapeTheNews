@@ -19,7 +19,7 @@ def main():
             if i.has_attr('class'): #if it has the class element
                 if i['class'] == "dateline": #And if that element is called "floatLeft storyDate"
                     try:
-                        date = s.contents[0].strip()
+                        date = s.contents[0].strip() #Gets just the text
                         break
                     except:
                         print("error") #If something goes wrong

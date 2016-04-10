@@ -20,7 +20,7 @@ def main():
                 if i['class'] == "dateline": #And if that element is called "floatLeft storyDate"
                     try:
                         date = s.contents[0].strip() #Gets just the text
-                        break
+                        break #Get out of the loop, because the first one should be correct. Check to make sure though
                     except:
                         print("error") #If something goes wrong
 

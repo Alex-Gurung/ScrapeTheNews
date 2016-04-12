@@ -2,7 +2,7 @@ def main():
 	website = input("Input website(cnn, nytimes, bbc, nzherald): ") #First requests for which website
 	url = input("Input url: ") #Requests the url
 	scraper(website, url)
-def scraper(website, url):
+def scraper(website, url): #Function, to be expanded, which will due the scraping
 	if ".com" not in url:
 		print("Invalid url")
 		exit()

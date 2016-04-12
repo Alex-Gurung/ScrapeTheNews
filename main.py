@@ -1,6 +1,6 @@
 def main():
 	website = input("Input website(cnn, nytimes, bbc, nzherald): ") #First requests for which website
-	url = input("Input url: ")
+	url = input("Input url: ") #Requests the url
 	scraper(website, url)
 def scraper(website, url):
 	if ".com" not in url:

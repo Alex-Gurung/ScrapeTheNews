@@ -5,7 +5,7 @@ def main():
 def scraper(website, url): #Function, to be expanded, which will due the scraping
 	if ".com" not in url: #Other tests should be included, but the most obvious is if there isn't a .com
 		print("Invalid url")
-		exit()
+		exit() #Exits the program if the url isn't valid
 	print("%s, %s" % (website, url))
 if __name__ == '__main__':   
      main()

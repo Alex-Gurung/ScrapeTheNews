@@ -1,5 +1,5 @@
 def main():
-	website = input("Input website(cnn, nytimes, bbc, nzherald): ") 
+	website = input("Input website(cnn, nytimes, bbc, nzherald): ") #First requests for which website
 	url = input("Input url: ")
 	scraper(website, url)
 def scraper(website, url):

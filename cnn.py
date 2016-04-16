@@ -41,7 +41,7 @@ def main():
         print("Title: %s\n" % title) #prints it, comment out if don't want to see it in terminal/cmd
         out.write(title + "\n") #writes information to outfile
         print("Content: %s" % paragraphs)
-        out.write(paragraphs)
+        out.write(paragraphs) #Writes paragraphs to outfile
     
 if __name__ == '__main__':   
      main()

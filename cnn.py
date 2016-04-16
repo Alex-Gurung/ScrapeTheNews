@@ -8,7 +8,7 @@ def main():
         opener = urllib.request.build_opener() #PYTHON CHECK: if using python 2, say urllib2 instead of urllib.request
         opener.addheaders = [('User-agent', 'Mozilla/5.0')] #Mozilla thing may not be nessecary
         url = u #Not necessary but makes it easier to hard code a url
-        soup = BeautifulSoup(opener.open(url), "html.parser")
+        soup = BeautifulSoup(opener.open(url), "html.parser") #Sets a variable soup that opens the url with an html parser
 
 
         #1) Link to the website 

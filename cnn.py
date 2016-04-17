@@ -8,7 +8,7 @@ def main():
         opener = urllib.request.build_opener() #PYTHON CHECK: if using python 2, say urllib2 instead of urllib.request
         opener.addheaders = [('User-agent', 'Mozilla/5.0')] #Mozilla thing may not be nessecary
         url = u #Not necessary but makes it easier to hard code a url
-        soup = BeautifulSoup(opener.open(url), "html.parser")
+        soup = BeautifulSoup(opener.open(url), "html.parser") #Sets a variable soup that opens the url with an html parser
 
 
         #1) Link to the website 
@@ -33,7 +33,7 @@ def main():
         paragraphs = ""
         for s in soup.find_all(class_="zn-body__paragraph"):
             try:
-                paragraphs += s.contents[0].strip()
+                paragraphs += s.contents[0].strip() #Fixes formatting errors
             except:
                 print("error") #If can't strip
         #Printing
@@ -41,7 +41,7 @@ def main():
         print("Title: %s\n" % title) #prints it, comment out if don't want to see it in terminal/cmd
         out.write(title + "\n") #writes information to outfile
         print("Content: %s" % paragraphs)
-        out.write(paragraphs)
+        out.write(paragraphs) #Writes paragraphs to outfile
     
 if __name__ == '__main__':   
      main()

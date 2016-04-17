@@ -1,4 +1,4 @@
-def main():
+def main(): #Main method
 	website = input("Input website(cnn, nytimes, bbc, nzherald): ") #First requests for which website
 	url = input("Input url: ") #Requests the url
 	scraper(website, url) #Calls the scraper function, defined below

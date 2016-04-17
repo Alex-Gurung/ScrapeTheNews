@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup, SoupStrainer
+from bs4 import BeautifulSoup, SoupStrainer #Import beautiful soup, remember you need to have installed this
 import urllib.request #PYTHON CHECK: if using python 2, import urllib2
 
 def main():

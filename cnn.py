@@ -25,7 +25,7 @@ def main():
         #3) title of article 
         title = soup.find("div", {"id":"cnnContentContainer"}) #Same as above
         for i in soup.find_all('meta'):
-            if i.has_attr('itemprop'):
+            if i.has_attr('itemprop'): #Using has_attr prevents errors down the line
                 if i['itemprop'] == 'headline':
                     if i.has_attr('content'):
                         title = i['content']

@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup, SoupStrainer
 import urllib.request #PYTHON CHECK: if using python 2, import urllib2
 def main():
-    out = open('output.txt', 'w') #Opens two files, one for reading in urls, and one for printing output data
+    out = open('bbcoutput.txt', 'w') #Opens two files, one for reading in urls, and one for printing output data
     inp = open('bbcurllist.txt', 'r')
     for u in inp:
         opener = urllib.request.build_opener() #PYTHON CHECK: if using python 2, say urllib2 instead of urllib.request

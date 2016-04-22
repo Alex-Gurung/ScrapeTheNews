@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup, SoupStrainer
 import urllib.request #PYTHON CHECK: if using python 2, import urllib2
 
 def main():
-    out = open('output.txt', 'w') #Opens two files, one for reading in urls, and one for printing output data
+    out = open('nyoutput.txt', 'w') #Opens two files, one for reading in urls, and one for printing output data
     inp = open('nyurllist.txt', 'r')
     for u in inp: #For every line in the input file
         opener = urllib.request.build_opener() #PYTHON CHECK: if using python 2, say urllib2 instead of urllib.request

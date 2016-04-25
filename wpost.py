@@ -6,7 +6,7 @@ def main():
     for u in inp:
         opener = urllib.request.build_opener() #PYTHON CHECK: if using python 2, say urllib2 instead of urllib.request
         opener.addheaders = [('User-agent', 'Mozilla/5.0')] #Mozilla thing may not be nessecary
-        url = u #Not necessary but makes it easier to hard code a url
+        url = u #Not necessary but makes it easier to understand later code
         soup = BeautifulSoup(opener.open(url), "html.parser")
 
 

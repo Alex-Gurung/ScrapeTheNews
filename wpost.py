@@ -11,7 +11,7 @@ def main():
 
 
         #1) Link to the website 
-        #This is already defined as url
+        #This is already defined as url, so...that's done
         #2) Date article published 
         date = ""
         for i in soup.find_all('div'): #For every span element in source code

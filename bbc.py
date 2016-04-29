@@ -3,10 +3,9 @@ import urllib.request #PYTHON CHECK: if using python 2, import urllib2
 def main():
     out = open('bbcoutput.txt', 'w') #Opens two files, one for reading in urls, and one for printing output data
     inp = open('bbcurllist.txt', 'r')
-    for u in inp:
+    for url in inp:
         opener = urllib.request.build_opener() #PYTHON CHECK: if using python 2, say urllib2 instead of urllib.request
         opener.addheaders = [('User-agent', 'Mozilla/5.0')] #Mozilla thing may not be nessecary
-        url = u #Not necessary but makes it easier to hard code a url
         soup = BeautifulSoup(opener.open(url), "html.parser")
 
 

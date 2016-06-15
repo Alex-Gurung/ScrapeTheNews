@@ -1,5 +1,5 @@
 # ScrapeTheNews
-This python project has the goal of web scraping article information from different news sites using BeautifulSoup. This program is currently in development and so has some bugs, but it somewhat works for the Washington Post, New York Times, CNN, BBC and the New Zealand Herald.
+This python project aims to web scrape article information from different news sites using BeautifulSoup. This program is currently in development and so has some bugs, but it somewhat works for the Washington Post, New York Times, CNN, BBC and the New Zealand Herald.
 ##Setup
 You will need to install BeautifulSoup, which can be found [here](https://www.crummy.com/software/BeautifulSoup/), in order to run the program.
 ##Use

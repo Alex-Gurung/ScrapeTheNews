@@ -1,3 +1,8 @@
+import bbc
+import cnn
+import nytimes
+import nzherald
+import wpost
 def main(): #Main method, ideally this will program will be eventually used as a general scraping tool which calls the other files.
 	website = input("Input website(cnn, nytimes, bbc, nzherald): ") #First requests for which website
 	url = input("Input url: ") #Requests the url

@@ -3,6 +3,9 @@ import cnn
 import nytimes
 import nzherald
 import wpost
+
+import os
+import subprocess
 def main(): #Main method, ideally this will program will be eventually used as a general scraping tool which calls the other files.
 	website = input("Input website(cnn, nytimes, bbc, nzherald): ") #First requests for which website
 	url = input("Input url: ") #Requests the url
@@ -12,5 +15,19 @@ def scraper(website, url): #Function, to be expanded, which will due the scrapin
 		print("Invalid url")
 		exit() #Exits the program if the url isn't valid
 	print("%s, %s" % (website, url)) #Currenyly just prints, but later shold be switched for calling the other programs
+	inp = open(website+"urllist.txt", "w")
+	out = open(website+"output.txt", "w")
+	inp.write(url)
+	if (website == "bbc"):
+		bbc.main()
+	if (website == "cnn"):
+		cnn.main()
+	if (website == "nytimes"):
+		nytimes.main()
+	if (website == "nzherald"):
+		nzherald.main()
+	if (website == "wpost"):
+		wpost.main()
+	
 if __name__ == '__main__':   
      main()

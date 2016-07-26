@@ -2,8 +2,8 @@ from bs4 import BeautifulSoup, SoupStrainer
 import urllib.request #PYTHON CHECK: if using python 2, import urllib2
 
 def main():
-    out = open('nzoutput.txt', 'w') #Opens two files, one for reading in urls, and one for printing output data
-    inp = open('nzurllist.txt', 'r')
+    out = open('nzheraldoutput.txt', 'w') #Opens two files, one for reading in urls, and one for printing output data
+    inp = open('nzheraldurllist.txt', 'r')
     for url in inp:
         opener = urllib.request.build_opener() #PYTHON CHECK: if using python 2, say urllib2 instead of urllib.request
         opener.addheaders = [('User-agent', 'Mozilla/5.0')] #Mozilla thing may not be nessecary

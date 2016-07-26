@@ -2,8 +2,8 @@ from bs4 import BeautifulSoup, SoupStrainer
 import urllib.request #PYTHON CHECK: if using python 2, import urllib2
 
 def main():
-    out = open('nyoutput.txt', 'w') #Opens two files, one for reading in urls, and one for printing output data
-    inp = open('nyurllist.txt', 'r')
+    out = open('nytimesoutput.txt', 'w') #Opens two files, one for reading in urls, and one for printing output data
+    inp = open('nytimesurllist.txt', 'r')
     for url in inp: #For every line in the input file
         opener = urllib.request.build_opener() #PYTHON CHECK: if using python 2, say urllib2 instead of urllib.request
         opener.addheaders = [('User-agent', 'Mozilla/5.0')] #Mozilla thing may not be nessecary

@@ -3,6 +3,8 @@ import cnn
 import nytimes
 import nzherald
 import wpost
+from bs4 import BeautifulSoup, SoupStrainer
+import urllib.request #PYTHON CHECK: if using python 2, import urllib2
 
 import os
 import subprocess
@@ -16,8 +18,8 @@ def scraper(website, url): #Function, to be expanded, which will due the scrapin
 		exit() #Exits the program if the url isn't valid
 	print("%s, %s" % (website, url)) #Currenyly just prints, but later shold be switched for calling the other programs
 	inp = open(website+"urllist.txt", "w")
-	out = open(website+"output.txt", "w")
 	inp.write(url)
+	inp.close()
 	if (website == "bbc"):
 		bbc.main()
 	if (website == "cnn"):

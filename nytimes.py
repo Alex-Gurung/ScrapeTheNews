@@ -6,7 +6,7 @@ def main():
     inp = open('nytimesurllist.txt', 'r')
     for url in inp: #For every line in the input file
         opener = urllib.request.build_opener() #PYTHON CHECK: if using python 2, say urllib2 instead of urllib.request
-        opener.addheaders = [('User-agent', 'Mozilla/5.0')] #Mozilla thing may not be nessecary
+        opener.addheaders = [('User-agent', 'Mozilla/5.0')] #Mozilla part may not be nessecary
         soup = BeautifulSoup(opener.open(url), "html.parser")
 
 

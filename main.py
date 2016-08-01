@@ -19,7 +19,7 @@ def scraper(website, url): #Function, to be expanded, which will due the scrapin
 	print("%s, %s" % (website, url)) #Currenyly just prints, but later shold be switched for calling the other programs
 	inp = open(website+"urllist.txt", "w")
 	inp.write(url)
-	inp.close() #Possibly unnecessary
+	inp.close() #Unnessecary, but makes certain there isn't an issue
 	if (website == "bbc"):
 		bbc.main()
 	if (website == "cnn"):

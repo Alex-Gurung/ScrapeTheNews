@@ -1,4 +1,4 @@
-import bbc
+import bbc #Import all of the python files with their specific scraping solutions
 import cnn
 import nytimes
 import nzherald

@@ -6,8 +6,6 @@ import wpost
 from bs4 import BeautifulSoup, SoupStrainer
 import urllib.request #PYTHON CHECK: if using python 2, import urllib2
 
-import os
-import subprocess
 def main(): #Main method, ideally this will program will be eventually used as a general scraping tool which calls the other files.
 	website = input("Input website(cnn, nytimes, bbc, nzherald): ") #First requests for which website
 	url = input("Input url: ") #Requests the url

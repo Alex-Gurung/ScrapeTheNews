@@ -13,8 +13,8 @@ def main(): #Main method, ideally this will program will be eventually used as a
 def scraper(website, url): #Function, to be expanded, which will due the scraping
 	if ".com" not in url: #Other tests should be included, but the most obvious is if there isn't a .com
 		print("Invalid url")
-		exit() #Exits the program if the url isn't valid
-	print("%s, %s" % (website, url)) #Currenyly just prints, but later shold be switched for calling the other programs
+		exit() #Ends the program if the url isn't valid
+	print("%s, %s" % (website, url)) #Currently just prints, but later shold be switched for calling the other programs
 	inp = open(website+"urllist.txt", "w")
 	inp.write(url)
 	inp.close() #Unnessecary, but makes certain there isn't an issue

@@ -19,7 +19,7 @@ def scraper(website, url): #Function to complete the site specific scraping
 	inp = open(website+"urllist.txt", "w")
 	inp.write(url)
 	inp.close() #Unnessecary, but makes certain there isn't an issue
-	if (website == "bbc"):
+	if (website == "bbc"): #Current state: Correctly gets title but has trouble getting anything else
 		bbc.main()
 	if (website == "cnn"):
 		cnn.main()

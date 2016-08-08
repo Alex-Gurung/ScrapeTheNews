@@ -13,11 +13,11 @@ def main():
         #This is already defined as url
         #2) Date article published 
         date = ""
-        for i in soup.find_all('div'): #For every span element in source code
-            if i.has_attr('class'): #if it has the class element
-                if i['class'] == "date date--v2": #And if that element is called "floatLeft storyDate"
+        for i in soup.find_all('meta'): #For every span element in source code
+            if i.has_attr('property'): #if it has the class element
+                if "datePublished" in i['property']: #And if that element is called "floatLeft storyDate"
                     try:
-                        date = s.contents[0].strip()
+                        date = i["content"].strip()
                     except:
                         print("error")#If something goes wrong
 
@@ -31,7 +31,7 @@ def main():
             except:
                 print("error")
         #Printing
-        #print(date)
+        print(date)
         print("Title: %s\n" % title) #prints it, comment out if don't want to see it in terminal/cmd
         out.write(title + "\n") #writes information to outfile
         #print("Content: %s" % paragraphs)

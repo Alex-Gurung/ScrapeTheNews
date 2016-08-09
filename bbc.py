@@ -34,7 +34,7 @@ def main():
         print(date)
         print("Title: %s\n" % title) #prints it, comment out if don't want to see it in terminal/cmd
         out.write(title + "\n") #writes information to outfile
-        #print("Content: %s" % paragraphs)
+        print("Content: %s" % paragraphs)
         out.write(paragraphs)
     
 if __name__ == '__main__':   

@@ -21,7 +21,7 @@ def scraper(website, url): #Function to complete the site specific scraping
 	inp.close() #Unnessecary, but makes certain there isn't an issue
 	if (website == "bbc"): #Current state: Pretty much works, aside form some minor formatting issues
 		bbc.main()
-	if (website == "cnn"):
+	if (website == "cnn"): #Current state: Mostly works, but doesn't add the first paragraph
 		cnn.main()
 	if (website == "nytimes"): #Current state: urllib.error.HTTPError: HTTP Error 303: The HTTP server returned a redirect error that would lead to an infinite loop.
 		nytimes.main()

@@ -13,7 +13,7 @@ def main(): #Main method, ideally this will program will be eventually used as a
 
 def scraper(website, url): #Function to complete the site specific scraping
 	#print("%s, %s" % (website, url)) #Just prints the website and url
-	inp = open(website+"urllist.txt", "w")
+	inp = open(website+"urllist.txt", "w") #Opens the url file to write
 	inp.write(url)
 	inp.close() #Unnessecary, but makes certain there isn't an issue
 	if (website == "bbc"): #Current state: Pretty much works, aside form some minor formatting issues

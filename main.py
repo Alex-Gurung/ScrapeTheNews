@@ -27,5 +27,5 @@ def scraper(website, url): #Function to complete the site specific scraping
 	if (website == "wpost"):
 		wpost.main()
 	
-if __name__ == '__main__':   
+if __name__ == '__main__': #To run main method
      main()

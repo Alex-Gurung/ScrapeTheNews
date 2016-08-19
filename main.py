@@ -1,4 +1,4 @@
-import bbc #Import all of the python files with their specific scraping solutions(the specific labels to search for)
+import bbc #Import the other python files with their specific scraping solutions(the specific labels to search for)
 import cnn
 import nytimes
 import nzherald

@@ -12,7 +12,7 @@ def main(): #Main method, ideally this will program will be eventually used as a
 	scraper(website, url) #Calls the scraper function, defined below
 
 def scraper(website, url): #Function to complete the site specific scraping
-	#print("%s, %s" % (website, url)) #Just prints the website and url
+	#print("%s, %s" % (website, url)) #Just prints the website and url, which should be included in each specific scraper
 	inp = open(website+"urllist.txt", "w") #Opens the url file to write
 	inp.write(url)
 	inp.close() #Unnessecary, but makes certain there isn't an issue

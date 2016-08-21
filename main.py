@@ -15,7 +15,7 @@ def scraper(website, url): #Function to complete the site specific scraping
 	#print("%s, %s" % (website, url)) #Just prints the website and url, which should be included in each specific scraper
 	inp = open(website+"urllist.txt", "w") #Opens the url file to write
 	inp.write(url)
-	inp.close() #Unnessecary, but makes certain there isn't an issue
+	inp.close() #Should be unnessecary, but makes certain there isn't an issue with the file still being open
 	if (website == "bbc"): #Current state: Pretty much works, aside form some minor formatting issues
 		bbc.main()
 	if (website == "cnn"): #Current state: Mostly works, but doesn't add the first paragraph

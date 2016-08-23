@@ -24,7 +24,7 @@ def scraper(website, url): #Function to complete the site specific scraping
 		nytimes.main()
 	elif (website == "nzherald"): #Current state: UnicodeEncodeError: 'charmap' codec can't encode character '\u2019' in position 859: character maps to <undefined>
 		nzherald.main()
-	elif (website == "wpost"):
+	elif (website == "wpost"): #Current state: pretty much works
 		wpost.main()
 	else:
 		print("Error, bad website input")

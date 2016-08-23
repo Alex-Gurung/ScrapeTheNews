@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup, SoupStrainer
 import urllib.request #PYTHON CHECK: if using python 2, import urllib2
 def main():
-    out = open('wpostoutput.txt', 'w') #Opens two files, one for reading in urls, and one for printing output data
+    out = open('wpostoutput.txt', 'wb') #Opens two files, one for reading in urls, and one for printing output data
     inp = open('wposturllist.txt', 'r')
     for url in inp:
         opener = urllib.request.build_opener() #PYTHON CHECK: if using python 2, say urllib2 instead of urllib.request
@@ -32,10 +32,12 @@ def main():
                 print("error")
         #Printing
         #print(date)
-        print("Title: %s\n" % title) #prints it, comment out if don't want to see it in terminal/cmd
-        out.write(title + "\n") #writes information to outfile
+        temp = "Title: " + title + "\n"
+        print(temp.encode("utf-8")) #prints it, comment out if don't want to see it in terminal/cmd
+        temp = title + "\n"
+        out.write(temp.encode("utf-8")) #writes information to outfile
         #print("Content: %s" % paragraphs)
-        out.write(paragraphs)
+        out.write(paragraphs.encode("utf-8"))
     
 if __name__ == '__main__':   
      main()

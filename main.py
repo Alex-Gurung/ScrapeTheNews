@@ -22,8 +22,7 @@ def scraper(website, url): #Function to complete the site specific scraping
 		cnn.main()
 	elif (website == "nytimes"): #Current state: urllib.error.HTTPError: HTTP Error 303: The HTTP server returned a redirect error that would lead to an infinite loop.
 		nytimes.main()
-	elif (website == "nzherald"): #Current state: UnicodeEncodeError: 'charmap' codec can't encode character '\u2019' in position 859: character maps to <undefined>
-		nzherald.main()
+	elif (website == "nzherald"): #Current state: Mostly works, some promotional stuff at the end
 	elif (website == "wpost"): #Current state: pretty much works
 		wpost.main()
 	else:

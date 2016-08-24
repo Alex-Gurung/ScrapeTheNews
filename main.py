@@ -26,7 +26,7 @@ def scraper(website, url): #Function to complete the site specific scraping
 	elif (website == "wpost"): #Current state: pretty much works
 		wpost.main()
 	else:
-		print("Error, bad website input")
+		print("Error, bad initial input")
 
 	
 if __name__ == '__main__': #To run main method

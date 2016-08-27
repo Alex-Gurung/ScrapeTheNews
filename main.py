@@ -3,7 +3,7 @@ import cnn
 import nytimes
 import nzherald
 import wpost
-from bs4 import BeautifulSoup, SoupStrainer #Imports what's necessary from BeautifulSoup
+from bs4 import BeautifulSoup, SoupStrainer #Imports what's necessary from BeautifulSoup(though might be unnecessary for main)
 import urllib.request #PYTHON CHECK: if using python 2, import urllib2
 
 def main(): #Main method, ideally this will program will be eventually used as a general scraping tool which calls the other files.

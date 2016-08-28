@@ -6,7 +6,7 @@ def main():
     inp = open('nzheraldurllist.txt', 'r')
     for url in inp:
         opener = urllib.request.build_opener() #PYTHON CHECK: if using python 2, say urllib2 instead of urllib.request
-        opener.addheaders = [('User-agent', 'Mozilla/5.0')] #Mozilla thing may not be nessecary
+        opener.addheaders = [('User-agent', 'Mozilla/5.0')] #Mozilla/5.0 may not be nessecary
         soup = BeautifulSoup(opener.open(url), "html.parser")
 
 

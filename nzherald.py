@@ -13,7 +13,7 @@ def main():
         #1) Link to the website 
         #This is already defined as url
         #2) Date article published 
-        date = "" #Creating a empty string
+        date = "" #Creating a empty string to hold the date in
         for i in soup.find_all('span'): #For every span element in source code
             if i.has_attr('class'): #if it has the class element
                 if i['class'] == "floatLeft storyDate": #And if that element is called "floatLeft storyDate"

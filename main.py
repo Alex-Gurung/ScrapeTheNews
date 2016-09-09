@@ -23,6 +23,7 @@ def scraper(website, url): #Function to complete the site specific scraping
 	elif (website == "nytimes"): #Current state: urllib.error.HTTPError: HTTP Error 303: The HTTP server returned a redirect error that would lead to an infinite loop.
 		nytimes.main()
 	elif (website == "nzherald"): #Current state: Mostly works, some promotional stuff at the end(included in article, most likely will keep it there)
+		nzherald.main()
 	elif (website == "wpost"): #Current state: pretty much works
 		wpost.main()
 	else:

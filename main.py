@@ -30,5 +30,5 @@ def scraper(website, url): #Function to complete the site specific scraping
 		print("Error, bad initial input") #If the name of the website doesn't match those available
 
 	
-if __name__ == '__main__': #To run main method
-     main()
+if __name__ == '__main__': #To run main method(Don't really need this)
+     main() 
